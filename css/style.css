@@ -1,0 +1,268 @@
+html, body {
+    margin:0;
+    padding:0;
+}    
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.icon {
+  width: 3vw;
+  height: 6vh;
+  position: fixed;
+  transition: 100ms ease-in-out;
+  z-index: 2;
+  padding-left: 1%;
+}
+
+header:has(.icon:hover) {
+  width: 100vw;
+  height: 6vh;
+  
+}
+
+header:hover {
+  width: 100vw;
+  height: 6vh;
+}
+
+header {
+  width: 0vw;
+  height: 6%;
+  background-color: #18171796;
+  z-index: 1;
+  position: fixed;
+  transition: 500ms ease-in-out;
+  border: solid;
+  border-color: rgb(153, 152, 152);
+  border-width: 1px;
+}
+
+.icon:hover + .tabs {
+  top: -10px;
+  
+}
+
+header:hover .tabs {
+  top: -10px;
+  
+}
+
+.tabs {
+  white-space: nowrap;
+  width: 100vw;
+  position: fixed;
+  top: -10%;
+  transition: 1000ms ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2vw;
+  transition: 150ms ease-in-out;
+  margin: 2vw;
+  
+}
+
+a:hover {
+  color: rgba(215, 49, 57);
+  text-decoration: underline;
+}
+
+#tabstext {
+  color: white;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.heading {
+  z-index: 1;
+  position: absolute;
+  color:  #ffffff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'LEMON MILK Medium'; 
+  text-transform: uppercase;
+  text-align: center;    
+  font-size: 2.34375vw;
+  letter-spacing: 0.782125vw;
+  margin-bottom: 0.8rem;
+  white-space: nowrap;
+}
+
+b {
+  color: rgba(215, 49, 57);
+}
+
+#hp {
+  margin: -5%;
+  color: #e7e9ec;
+}
+
+h2 {
+  color: rgba(215, 49, 57);
+  font-size: 250%;
+}
+
+#aboutus {
+  border: double;
+  border-color: rgba(215, 49, 57);
+  font-size: 3.90625vw;
+  color: rgba(215, 49, 57);
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 100ms ease-in-out;
+  white-space: nowrap;
+}
+
+#aboutus:hover {
+  color: rgb(255, 110, 117);
+  border-color: rgb(255, 110, 117);
+}
+
+#abus {
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: 1500ms ease-in-out;
+  color: rgba(215, 49, 57);
+  font-size: 0;
+  text-align: center;
+}
+
+#aboutus:focus + #abus {
+  display: block;
+  font-size: 1.3625vw;
+  color: white;
+}
+
+#aboutus:focus {
+  border: none;
+  top: 130%;
+  font-weight: 5px;
+  transition: 1000ms ease-in-out;
+  
+}
+
+
+.aboutustext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.sec1 {
+    background-color: #1f171400;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #2b2929fd;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.video-container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none; 
+    z-index: -999;
+  }
+      
+  iframe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;  
+    transform: translate(-50%, -50%);
+    z-index: -999;
+    filter: contrast(1.2);
+    filter:saturate(1.2)
+ }
+
+  @media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+      height: 56.25vw;
+    }
+  }
+        
+  @media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+      width: 177.78vh;
+    }
+  }
+
+  .sec3 {
+    background-image: url("https://static.wixstatic.com/media/1e70f2_78240daf84db43d7a888d991b8c2f34f~mv2.jpg/v1/fill/w_600,h_292,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1593515074537_jpg%20%E3%81%AE%E3%82%B3%E3%83%94%E3%83%BC.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #alumnis {
+  position: absolute;
+  color:  #ffffff;
+  left: 50%;
+  top: 250%;
+  transform: translate(-50%,-50%);
+  font-family: 'LEMON MILK Medium'; 
+  text-transform: uppercase;
+  text-align: center;    
+  font-size: 300%;
+  letter-spacing: 10px;
+  margin-bottom: 0.8rem;
+  white-space: nowrap;
+  }
+
+  .alumimages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+  }
+  
+  #al1 {
+    padding: 5%;
+    height: 20%;
+    width: 20%;
+  }
+
+  #al3 {
+    padding: 5%;
+    height: 20%;
+    width: 20%;
+  }
+
+  #al2 {
+    padding: 5%;
+    height: 20%;
+    width: 20%;
+  }
+
+  .alumnames {
+  white-space: nowrap;
+  position: absolute;
+  color:  #ffffff;
+  left: 50%;
+  top: 370%;
+  transform: translate(-50%,-50%);
+  }

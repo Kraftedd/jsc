@@ -1,0 +1,104 @@
+.icon {
+    width: 3vw;
+    height: 6vh;
+    position: fixed;
+    transition: 100ms ease-in-out;
+    z-index: 2;
+    padding-left: 1%;
+  }
+  
+  header:has(.icon:hover) {
+    width: 100vw;
+    height: 6vh;
+    
+  }
+  
+  header:hover {
+    width: 100vw;
+    height: 6vh;
+  }
+  
+  header {
+    width: 0vw;
+    height: 6%;
+    background-color: #18171796;
+    z-index: 1;
+    position: fixed;
+    transition: 500ms ease-in-out;
+    border: solid;
+    border-color: rgb(153, 152, 152);
+    border-width: 1px;
+  }
+  
+  .icon:hover + .tabs {
+    top: -10px;
+    
+  }
+  
+  header:hover .tabs {
+    top: -10px;
+    
+  }
+  
+  .tabs {
+    white-space: nowrap;
+    width: 100vw;
+    position: fixed;
+    top: -10%;
+    transition: 1000ms ease-in-out;
+    display: flex;
+    justify-content: center;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+    transition: 150ms ease-in-out;
+    margin: 2vw;
+    
+  }
+  
+  a:hover {
+    color: rgba(215, 49, 57);
+    text-decoration: underline;
+  }
+  
+  #tabstext {
+    word-spacing: 1500%;
+    color: white;
+  }
+
+  
+html, body {
+    margin:0;
+    padding:0;
+}    
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+  float: left;
+  position: absolute;
+  max-height: 40px;
+  padding: 2vw;
+}
+
+#insta {
+  float: right;
+  align-items: center;
+}
